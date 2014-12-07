@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+	<html class="no-js" lang="en">
+		<head>
+			<meta charset="UTF-8" />
+			<title>Events | Millmount House</title>
+			<link rel="stylesheet" type="text/css" href="style.css"/> <!-- General stylesheet of page -->
+			<link rel="shortcut icon" href="../Icons/beer.ico"/> <!-- Beer Icon for top of page -->
+			<link rel="stylesheet" type="text/css" href="../CSS/default.css" /><!--Stylesheet for search bar -->
+			<link rel="stylesheet" type="text/css" href="../CSS/component.css" /><!-- Stylesheet for search bar -->
+			<script src="../JS/modernizr.custom.js"></script><!-- Javascript for search bar -->
+            
+			
+		</head>
+		
+		<body>
+		<div id="bignester"><!-- Wrapper for the whole page -->
+		<!-- Start of top of page -->
+		<div id="top">
+			<div id="topStyle">
+				<div id="logo">
+					<div id="imageholder" class="clickable"><a href= ""></a><img src="../Pictures/rdl.jpg" alt="millmount House" style="height:100%; width:100%">
+					</div>	
+				</div>
+					
+				<div id="filler2">
+				
+		
+					<div id="icons"><table id="table" ><tr>
+					<td><a href="http://www.facebook.com/" target="_blank"><img src="../Icons/f4.png" width="45" height="45" alt="facebook"></a></td>
+					<td><a href="http://www.twitter.com/" target="_blank"><img src="../Icons/t4.png" width="45" height="45" alt="twitter"></a></td>
+					<td><a href="http://www.google.com/" target="_blank"><img src="../Icons/yt.png" width="45" height="45" alt = "google" ></a></td>
+					</tr></table></div>
+					
+		<!-- Search bar code -->
+					<div class="main clearfix">
+				<div class="column">
+					<div id="sb-search" class="sb-search" >
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		<script src="../JS/classie.js"></script>
+		<script src="../JS/uisearch.js"></script>
+		<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>	
+		<!-- End of search bar code -->
+				</div>
+				<div id="filler3">
+					<div id="spacer"></div>
+					<div id="home" class="clickable"><a href="index.html"></a><h3 id="h">Home</h3></div>
+					<div id="pricelist" class="clickable"><a href="index.html"></a><h3>Price List</h3></div>
+					<div id="events" class="clickable"><a href="Events/index.html"></a><h3>Events</h3></div>
+					<div id="location"  class="clickable"><a href="index.html"></a><h3>Location</h3></div>
+					<div id="contactus" class="clickable"><a href="index.html"></a><h3>Contact Us</h3></div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- End of top -->
+		
+		
+		<!-- Start of body -->
+		<div id="body">
+		<div id="picWrapper2">
+		<h1>Upcoming Events</h1>
+		</div>
+		
+		
+		<div id="realss2" > 
+		<!-- Google calender --><iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=collegedrive101%40gmail.com&amp;color=%232952A3&amp;ctz=Europe%2FDublin" style=" "></iframe>
+		
+		</div> 
+		
+		<div id="picWrapper2">
+		<h1>Book an event</h1>
+		</div>
+		<div id="realss2" > 
+		<form name="bookAEvent">
+		<br />
+		<label><input type="text" name="firstname" id="firstname" placeholder="Name" ></label>
+		<br /><br /><br />
+	
+		<label><input type="email" name="email" placeholder="Email" ></label>
+		<br /><br /><br />
+		<label><input type="age" name="contact" placeholder="Contact Number" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> </label>
+		<br /><br /><br />
+		<label><br /><input type="date" id="datepicker" ></label>
+		<br /><br /><br />
+		<label><input type="text" name="extra" placeholder="Extra Information"></input></label>
+		<br /><br /><br />
+		<button onclick="return buttonSubmit();" type="submit" value="submit" id="submiter" >Submit</button>
+            <script>
+            function buttonSubmit(){
+                alert("Your event ticket has been lodged. We will be in contact shortly to finalise the details.");
+            }
+            
+            </script>
+		<button onclick="return buttonReset();" type="reset" value="Reset" id="reseter" >Reset</button>
+		<script>
+		function buttonReset(e){
+		if (window.confirm("Are you sure you want to reset the form?")){
+		doReset();
+		}
+		return false;
+		}
+		</script>
+		</form>
+		
+		<div id="calside" style= "width:400px; height:435px">
+		<div id ="textarea" ><p>Located on Drumcondra Road, Millmount House is the ideal location for all events, big or small. Whether it be a 21st birthday party or a company Christmas party we can cater to you.</p>
+		<ul>
+		<li>Birthday Parties</li>
+		<li>Corporate Events</li>
+		<li>Pool/Poker Tournaments</li>
+		<li>And Much More ...</li>
+		</div>
+		<img src="../Pictures/21bd.jpg" alt="21st Birthday" style="float:left">
+		<img src="../Pictures/ccp.jpg" alt="Christmas" style="float:right">
+		</div>
+		</div>
+             <script>
+        $(document).ready(function() {
+    $("#txtboxToFilter").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+});
+        
+        
+        </script>
+		
+		</div>
+		<!-- End of body -->
+		
+		
+		<!-- Start of bottom -->
+		<div id="bottom">
+			<div id="bottomstyle">
+				<div id="bh"><h2 >Hours</h2><h3 >Monday - Thursday:</h3><h4 >12.30am - 11.30pm</h4><h3 >Friday - Saturday:</h3><h4 >12.00am - 2.00am</h4><h3 >Sunday</h3><h4 >12.00am - 1.00am</h4></div>
+				<div id="bl"><h2 >Location</h2><h4 >1 Upper Drumcondra Road, Drumcondra,Dublin 9</h4> </div>
+				<div id="bc"><h2 >Call Us </h2><h4 >01 8428743</h4></div>
+				<div id="be"><h2 >Email Us</h2><h4 >info@millmounthouse.com</h4></div>
+			</div>
+		</div>
+		<!-- End of bottom -->
+		</div>
+		
+		</body>
+	</html>

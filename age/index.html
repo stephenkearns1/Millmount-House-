@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <link rel="shortcut icon" href="../Icons/beer.ico"/> <!-- Beer Icon for top of page -->
+        <title>Age Gate | Millmount House</title>
+        
+        <script language="javascript" type="text/javascript" >
+        function changeText(){
+            var changeme=document.getElementById("change");
+            changeme.innerHTML = " Day Were You Born";
+        }
+        
+        </script>
+        
+         <script language="javascript" type="text/javascript" >
+        function changeTextt(){
+            var changeme=document.getElementById("change");
+            changeme.innerHTML = " Month Were You Born";
+        }
+        
+        </script>
+        
+        <script language="javascript" type="text/javascript" >
+        function changeTexttt(){
+            var changeme=document.getElementById("change");
+            changeme.innerHTML = " Year Were You Born";
+        }
+        
+        </script>
+        
+      
+        
+    </head>
+    <body>
+        <div id="wrapper">
+    <div id="header">
+             Millmount House
+            </div>
+    <div id="m">
+         <img src="../Pictures/bodyguard.png" id="secer" alt="bodyguard" />
+         
+         <img src="../Pictures/bubble.svg" id="bubble" alt="bubble" />
+        <div id="speak"> "What <span id="change" >Age Are You ?"</span>  </div>
+        <img id="bricker" src="../Pictures/brick2.jpg" alt="brick wall" >
+       
+        <div id="text">
+              
+        <form name="age" id="age" >
+            <input type="hidden" name="requiredAge" id="requiredAge" value="18">
+            
+        <input placeholder="DD" maxlength="2"  name="day" id="day" type="age" class="ageform first"  onclick="changeText();" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+            
+            <input placeholder="MM" maxlength="2" name="month" type="age" id="month" class="ageform first"  onclick="changeTextt();" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+            
+            <input placeholder="YYYY" maxlength="4" name="year" id="year" type="age" class="ageform first" onclick="changeTexttt();" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+            <br />
+              <br />
+              <br /> 
+              
+            <input type="submit" name="submit" value="Let Me In" id="letmein">
+
+        </form>
+        
+              <script  language="JavaScript1.2">
+        $("#age").submit(function(){
+
+            var day = $("#day").val();
+            var month = $("#month").val();
+            var year = $("#year").val();
+            var age  = $("#requiredAge").val();
+
+            if (day == "" || month == "" || year == "") {
+                alert("You must enter all fields.");
+                return false;
+            }
+
+            var mydate = new Date();
+
+            mydate.setFullYear(year, month-1, day);
+     
+            var currdate = new Date();
+
+            currdate.setFullYear(currdate.getFullYear() - age);
+
+            if ((currdate - mydate) < 0){
+                 window.location.href = '../under/index.html'; //redirect to animation};
+                return false;
+            }
+
+        if ((currdate - mydate) > 0){
+            window.location.href = '../index.html'; //redirect to website homepage
+            return false;
+            }
+        });
+        </script>  
+            </div>
+        
+        <script>
+        $(document).ready(function() {
+    $("#txtboxToFilter").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+});
+        
+        
+        </script>
+            </div>
+            <div id="footer">
+           <br />
+                <br />
+            Please Enjoy Drink Responsibly<br />
+                For more information on the safest way to enjoy drink please visit www.DrinkAware.ie
+            </div>
+
+        </div>
+    
+    </body>
+</html>

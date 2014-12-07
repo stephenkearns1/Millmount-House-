@@ -1,0 +1,456 @@
+.xg_module_body img {margin:0!important;}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../Icons/icomoon.eot');
+    src:url('../Icons/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../Icons/icomoon.woff') format('woff'),
+        url('../Icons/icomoon.ttf') format('truetype'),
+        url('../Icons/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#top{
+width:100%;
+height:195px;
+background-color:black;
+}
+
+#booking{
+width:100%;
+margin-left:0;
+margin-right:0;
+margin:0;
+padding:0;
+height:30px;
+background:blue;
+margin-top:50px;
+}
+
+#booking:hover
+{
+cursor:pointer;
+}
+
+#topStyle{
+width:70%;
+height:100%;
+background-color:black;
+margin-left:15%;
+}
+
+#logo{
+width:330px;
+height:220px;
+background-color:blue;
+}
+
+#bignester
+{
+height:100%;
+width:100%;
+}
+
+#body{
+width:70%;
+height:1300px;
+margin-left:15%;
+}
+
+#bottom{
+width:100%;
+height:350px;
+background-color:black;
+}
+
+#slideshow{
+width:100%;
+margin-top:2%;
+height:400px;
+}
+:required:focus {
+  box-shadow: 0  0 3px rgba(255,0,0,0.5); 
+}
+
+#extrainfo
+{
+height:100px;
+}
+
+td
+{
+text-align:center;
+}
+
+#slideshow2{
+width:100%;
+margin-top:2%;
+height:60%;
+}
+
+body {
+background-image:url("../Pictures/bp31.jpg")
+}
+
+#icons{
+margin-top:15px; 
+margin-bottom:10px; 
+float:right;
+}
+
+#table{
+width:170px; 
+}
+
+#picWrapper{
+width:100%;
+margin-top:3.5%;
+height:70px;
+}
+#submiter:hover
+{
+background:green;
+color:black;
+}
+
+#reseter:hover
+{
+    background: red;
+    color: black;
+}
+
+button
+{
+margin-top:20px;
+}
+
+#picWrapper2{
+width:100%;
+margin-top:50px;
+height:70px;
+border-bottom:white 2px solid;
+text-align:center;
+float:left;
+margin-bottom:30px;
+}
+h1
+{
+color:white;
+
+}
+
+
+abel { 
+    display:block;
+    margin:20px;
+    width:420px;
+    overflow:auto;
+    font-family:sans-serif;
+    font-size:20px;
+    color:#444;
+    text-shadow:0 0 2px #ddd;
+    padding:20px 10px 10px 0;
+}
+
+input {
+    float:right;
+    width:200px;
+    border:2px solid #dadada;
+    border-radius:7px;
+    font-size:20px;
+    padding:5px;
+    margin-top:-10px;    
+}
+
+input:focus { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
+
+#bigsizer
+{
+height:150px;
+}
+
+form
+{
+width:200px;
+margin: 0 auto;
+height:10px;
+color:white;
+}
+
+#textarea
+{
+width:100%;
+height:60%;
+float:right;
+}
+
+li:before
+ {
+    content: '✔';   
+    margin-left: -1em; margin-right: .100em;
+	color:green;
+ }
+
+ ul
+{
+   padding-left:20px;
+   text-indent:2px;
+   list-style: none;
+   list-style-position:outside;
+   color:white;
+}
+
+#pic1, #pic2, #pic3, #pic4{
+width:22%;
+height:175px;
+}
+
+#pic1, #picWrapper, #slideshow2, #logo, #slideshow, #pic4, #filler2, #filler3, #spacer, #home, #pricelist, #events, #location, #contactus, #secondspacer, #imageholder, #bh, #bl, #bc, #be
+{
+float:left
+}
+
+#pic2, #realss, #filler, #pic3
+{
+float:right;
+}
+
+#pic3{
+margin-right:4%;
+}
+
+#pic4{
+margin-left:4%;
+}
+
+p
+{
+color:white;
+}
+
+#realss{
+height:500px;
+width:100%;
+float:left;
+
+
+}
+iframe
+{
+float:left;
+margin-top:0;
+border-width:0;
+width:100%; 
+height:500px; 
+}
+form
+{
+margin: 0 auto;
+}
+
+#realss2{
+height:520px;
+width:100%;
+margin-left:0;
+margin-right:0;
+margin-top:80px;
+
+}
+
+
+#filler{
+height:5%;
+width:100%;
+}
+
+#filler2{
+height:70%;
+width:60%;
+background-color:black
+}
+
+h3, h4, h5, h2
+{
+color:white;
+text-align: center;
+}
+
+#filler3{
+height:30%;
+width:60%;
+}
+
+#spacer{
+height:100%;
+width:15%;
+}
+
+#home, #pricelist, #events, #location, #contactus{
+width:16.5%;
+height:100%;
+background-color:black;
+text-align: center;
+}
+
+
+ #contactus, #pricelist, #events, #location
+ {
+border-left: solid 1px;
+border-left-color:white;
+}
+
+ #contactus:hover h3, #pricelist:hover h3, #events:hover h3, #location:hover h3, #h2:hover h3
+{
+color:#808080;
+}
+
+div.clickable
+{
+position:relative;
+}
+
+div.clickable a
+{
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+text-decoration:none;
+z-index:10;
+background-color:blue;
+opacity:0;
+
+}
+table, form,input 
+{
+float:left;
+}
+#calside
+{
+height: 435px;
+width:400px;
+float:right;
+}
+
+#h{
+color:#808080;
+}
+
+#imageholder
+{
+width:100%;
+height:50%;
+margin-top:90px;
+}
+
+#bottomstyle{
+width:70%;
+height:250px;
+margin-left:15%;
+}
+
+#bh, #bl, #bc, #be
+{
+height:100%;
+width:25%;
+}
+
+.sb-search {
+    position: relative;
+    margin-top: 10px;
+    width: 0%;
+    min-width: 60px;
+    height: 60px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+
+    -webkit-backface-visibility: hidden;
+}
+
+.sb-search-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    z-index: 10;
+    padding: 20px 65px 20px 20px;
+    font-family: inherit;
+    font-size: 20px;
+    color: #2c3e50;
+}
+ 
+input[type="search"].sb-search-input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+
+
+
+.sb-icon-search,
+.sb-search-submit  {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sb-search-submit {
+    background: #fff; /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
+}
+
+.sb-icon-search {
+    color: #fff;
+    background: #e67e22;
+    z-index: 90;
+    font-size: 22px;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sb-search.sb-search-open, .no-js .sb-search 
+{
+ width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+    background: #da6d0d;
+    color: #fff;
+    z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+    z-index: 90;
+}
